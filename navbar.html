@@ -39,6 +39,24 @@
         li:active{
             background: red;
         }
+        .dropdwn{
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 70px;
+            height: auto;
+            width: 70px;
+            background-color: antiquewhite;
+        }
+        .dropdwn a{
+            padding: 15px 10px;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .dropbtn:hover .dropdwn{
+            display: block;
+        }
         @media screen and (max-width: 900px){
             nav{
                 height: 100%;
@@ -51,6 +69,9 @@
             li:last-child{
             float: none;
         }
+            .dropdwn{
+                left: 150px;
+            }
         }
         @media screen and (max-width: 430px) {
             nav{
@@ -63,13 +84,22 @@
                 height: 40px;
                 padding-top: 20px;
             }
+            .dropdwn{
+            width: 100%;
+            left: 0px;
+        }
         }
     </style>
 <body>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li class="dropbtn"><a href="#">About</a>
+            <div class="dropdwn">
+                    <a href="#">List</a>
+                    <a href="#">List</a>
+                    <a href="#">List</a>
+                </div></li>
             <li><a href="#">Product</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Search</a></li>
