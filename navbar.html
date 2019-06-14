@@ -57,10 +57,44 @@
         .dropbtn:hover .dropdwn{
             display: block;
         }
+        form{
+            height: 400px;
+            width: 600px;
+            padding: 20px 30px;
+            background-color: firebrick;
+            border-radius: 6%;
+            font-size: 20px;
+        }
+        .col30{
+            float: left;
+            width: 30%;
+        }
+        .col70{
+            float: left;
+            width: 70%;
+        }
+        input, textarea{
+            width: 80%;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-radius: 2%;
+        }
+        input[type='submit']{
+            width: 30%;
+            height: 45px;
+            background-color: wheat;
+            float: right;
+        }
+        .row::after{
+              content: "";
+              display: table;
+              clear: both;
+        }
         @media screen and (max-width: 900px){
             nav{
                 height: 100%;
                 width: 150px;
+                position: fixed;
             }
             li{
                 float:none;
@@ -72,11 +106,31 @@
             .dropdwn{
                 left: 150px;
             }
+            form{
+            position: relative;
+            left: 160px;
+            top: 30px;
+            height: 290px;
+            width: 300px;
+            padding: 20px 30px;
+            font-size: 16px;
+        }
+        input, textarea{
+            padding: 6px 15px;
+            margin-bottom: 10px;
+        }
+        textarea{
+            height: 70px;
+        }
+        input[type='submit']{
+            height: 35px;
+        }
         }
         @media screen and (max-width: 430px) {
             nav{
                 height: auto;
                 width: 100%;
+                position: static;
             }
             li{
                 display: inline-block;
@@ -87,6 +141,12 @@
             .dropdwn{
             width: 100%;
             left: 0px;
+        }
+            form{
+            left: 40px;
+            top: 30px;
+            height: 240px;
+            padding: 20px 20px;
         }
         }
     </style>
@@ -105,5 +165,42 @@
             <li><a href="#">Search</a></li>
         </ul>
     </nav>
+    <section>
+        <form action="#">
+            <div class="row">
+                <div class="col30">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col70">
+                    <input type="text" id="name">
+                </div>
+            </div>
+                <div class="row">
+                <div class="col30">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col70">
+                    <input type="email" id="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col30">
+                    <label for="web">Website:</label>
+                </div>
+                <div class="col70">
+                    <input type="url" id="web" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col30">
+                    <label for="message">Message:</label>
+                </div>
+                <div class="col70">
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 </body>
 </html>
