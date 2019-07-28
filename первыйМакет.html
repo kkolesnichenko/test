@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header, .body, footer{
+        margin: 0 auto;
+        border: 1px solid blue;
+    }
+    header{
+        width: 800px;
+        height: 150px;
+    }
+    header img{
+        float: left;
+        padding: 10px 5px;
+    }
+    header p{
+        margin: 15px 5px;
+        font-weight: bold;
+    }
+    header ul{
+        width: 600px;
+        height: 40px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    header li{
+        list-style: none;
+    }
+    header li a{
+        text-decoration: none;
+    }
+    header li a:hover{
+        text-decoration: underline;
+        color: rebeccapurple;
+    }
+    .body{
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+    .left, .right{
+        width: 200px;
+        height: 600px;
+        border: 1px solid blue;
+    }
+    .main{
+        width: 400px;
+        height: 600px;
+    }
+    .main p, h1{
+        padding: 10px 5px;
+    }
+    footer{
+        width: 800px;
+        height: 80px;
+    }
+    </style>
+<body>
+    <header>
+        <img src="img/iconfinder_plane-b_86362.png"  alt="">
+        <p>www.site.com</p>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Новости</a></li>
+        </ul>
+    </header>
+    <div class="body">
+        <div class="left"><p>left</p></div>
+        <div class="main">
+            <h1>О компании</h1>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam nesciunt libero molestias saepe modi aspernatur, repellendus minima quae totam exercitationem eaque quod, sed nisi. Ullam maiores iusto, quia quas non.</span>
+            <span>Repellendus rerum iure beatae, nihil dolorum saepe voluptatem enim sapiente officiis maxime ut illum libero nobis iusto assumenda autem! Ut eligendi in suscipit commodi enim, dignissimos quibusdam. Dolorem, sit accusantium!</span>
+            <span>Reprehenderit eligendi neque odio, a doloribus vitae vero nulla quae! Quaerat hic architecto nostrum quibusdam doloremque explicabo aspernatur beatae fuga, ducimus culpa eaque at doloribus, impedit velit. Natus, neque perferendis!</span>
+            <span>Nostrum a, officiis adipisci ratione laboriosam pariatur iusto ad illo culpa qui, tempore laborum distinctio quae, ducimus velit dolorem quaerat. Similique consequatur ad nesciunt consequuntur nisi, sunt labore ullam consectetur.</span>
+            <span>Necessitatibus deleniti sapiente cumque earum vero accusamus laborum sint ducimus temporibus obcaecati ex incidunt aliquam officia, quia dolorem voluptatum, illo magni perferendis. Incidunt veniam voluptas repudiandae quas ullam deserunt commodi!</span>
+            <span>Sed consequatur eos nobis odit explicabo nam? Pariatur error illo at dolores in facilis iste, quam, commodi nesciunt molestiae eaque inventore quasi mollitia unde ab eum facere iusto, cupiditate dolorum.</span>
+            <span>Earum, odit asperiores cupiditate quae commodi libero fuga natus, nesciunt assumenda laboriosam. Dolorum animi, totam sunt, reprehenderit vel vitae excepturi, maiores facere veritatis accusantium omnis tempora expedita voluptates earum deleniti!</span></p>
+        </div>
+        <div class="right"><p>right</p></div>
+    </div>
+    <footer></footer>
+</body>
+</html>
