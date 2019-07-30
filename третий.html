@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: 160px;
+        background-color: darkgray;
+    }
+    header h1{
+        color: brown;
+        padding: 20px 160px;
+        
+    }
+    header p{
+        float: right;
+        color: brown;
+        margin-top: -40px;
+        padding-right: 20px
+    }
+    nav ul{
+        height: 50px;
+        background-color: brown;
+        display: flex;
+        align-items: center;
+        padding-left: 160px;
+    }
+    nav li{
+        list-style: none;
+        margin-right: 30px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+    nav li:hover{
+        background-color: black;
+        padding: 15px 0px;
+    }
+    .nav2 ul{
+        display: flex;
+        align-items: center;
+        padding-left: 250px;
+        height: 33px;
+    }
+    .nav2 li{
+        list-style: none;
+        margin-right: 30px;
+        cursor: pointer;
+        color: white;
+        text-decoration: underline;
+    }
+    .nav2 li:hover{
+        text-decoration: none;
+    }
+    .signin{
+        width: 250px;
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .signin p{
+        color: black;
+        padding-right: 5px;
+    }
+    </style>
+<body>
+    <header>
+        <h1>Пчёлы.ru</h1>
+        <p>Наш мёд - лучший в округе! Покупайте наш мед!</p>
+        <nav>
+            <ul>
+                <li>Главная</li>
+                <li>Новости</li>
+                <li>Контакты</li>
+                <li>О компании</li>
+                <li>Как добраться</li>
+            </ul>
+        </nav>
+        <div class="nav2">
+            <ul>
+                <li>Вопросы</li>
+                <li>Метки</li>
+                <li>Знаки</li>
+                <li>Информация</li>
+                <li>Без ответа</li>
+                <li>Задать вопрос</li>
+            </ul>
+            <div class='signin'>
+                <p>Вы зашли как <b>User</b></p>
+                <p>|Выйти</p>
+            </div>
+        </div>
+    </header>
+    <div class="content"></div>
+    <footer></footer>
+</body>
+</html>
