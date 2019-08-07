@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.first p{
+    border: 1px solid red;
+    margin: 5px 10px;
+    padding: 5px 5px;
+}
+.first p:first-child{
+    letter-spacing: 4px;
+}
+.first p:nth-child(2){
+    letter-spacing: -1px;
+}
+.first p:nth-child(3){
+    word-spacing: 5px;
+}
+.first p:nth-child(4){
+    word-spacing: -5px;
+}
+.first p:nth-child(5){
+    font-variant: small-caps;
+}
+.table table{
+    border: 1px solid red;
+    border-spacing: 10px 5px;
+    empty-cells: hide;
+}
+td{
+    width: 70px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+.shadow{
+    width: 100px;
+    height: 200px;
+    border: 1px dotted green;
+    padding: 10px 5px;
+}
+.shadow p{
+    padding: 15px 0px;
+}
+.shadow p:first-child{
+    text-shadow: 10px 10px;
+}
+.shadow p:nth-child(2){
+    text-shadow: 10px 10px 3px;
+}
+.shadow p:nth-child(3){
+    text-shadow: 10px 10px 3px red, -10px -10px 3px blue;
+}
+.shadow p:nth-child(4){
+    text-shadow: -1px 1px black, 1px 1px red;
+    color: red;
+    font-size: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

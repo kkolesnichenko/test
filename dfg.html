@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
@@ -50,6 +51,27 @@
     a:hover{
         text-decoration: underline;
     }
+    .fourblocks{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .bl1, .bl2, .bl3, .bl4{
+        width: 20%;
+        height: 100px;
+        background-color: gold;
+        margin-top: 10px;
+    }
+    @media screen and (min-width:480px) and max-width:800px){
+        .bl1, .bl2, .bl3, .bl4{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:480px){
+        .fourblocks{
+            flex-direction: column;
+        }
+    }
     </style>
 <body>
     <div class='main'>
@@ -65,6 +87,12 @@
    <h1>Lorem ipsum</h1>
         <p>Lorem ipsum dolor <a>sit</a> amet, consectetur adipisicing elit. Harum sint excepturi, reprehenderit accusantium, debitis explicabo ullam adipisci iusto architecto eligendi ea sapiente id consequatur repellat quidem modi, eos quod at.</p>
    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis debitis maxime pariatur excepturi magni vitae distinctio consectetur expedita nobis reiciendis voluptates natus, nesciunt quas necessitatibus porro atque corporis, eius quos.</span><span>Dolor ratione tempore, quam excepturi inventore quo at, explicabo! Sapiente magni iure minus earum sequi reprehenderit aliquam maiores numquam perferendis, optio, ratione nam, officia laboriosam, corrupti saepe ea quaerat? Sapiente.</span></p>
+    </div>
+    <div class="fourblocks">
+        <div class="bl1"></div>
+        <div class="bl2"></div>
+        <div class="bl3"></div>
+        <div class="bl4"></div>
     </div>
 </body>
 </html>
